@@ -9,9 +9,7 @@ public class Bulto {
         return peso;
     }
 
-    public boolean isFragil() {
-        return fragil;
-    }
+
 
     public Bulto(String identificador, double volumen, double peso, boolean fragil) { /*Añado el constructor para añadir las caracteristicas del bulto en el main.*/
         this.identificador = identificador;

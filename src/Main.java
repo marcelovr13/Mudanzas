@@ -8,7 +8,7 @@ public class Main {
         Camion camion1 = new Camion("7864FJC", 200, 500);
         System.out.println(camion1);
 
-        Mudanza mudanza1 = new Mudanza("23", 400, 5);
+        Mudanza mudanza1 = new Mudanza("23", 200, 5);
         System.out.println(mudanza1);
 
 

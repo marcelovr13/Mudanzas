@@ -10,6 +10,8 @@ public class Camion {
         this.pesoTransporteMaximo = pesoTransporteMaximo;
     }
 
+
+
     @Override
     public String toString() {
         return "Camion{" +

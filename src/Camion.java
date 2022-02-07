@@ -47,13 +47,4 @@ public class Camion {
             return pesoTotalCarga;
     }
 
-
-    @Override
-    public String toString() {
-        return "Camion{" +
-                "matricula = " + matricula +
-                ", volumenRemolque = " + volumenRemolque +
-                ", pesoTransporteMaximo = " + pesoMaximo +
-                '}' + "\n";
-    }
 }

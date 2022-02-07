@@ -9,6 +9,10 @@ public class Bulto {
         return volumen;
     }
 
+    public boolean esFragil() {
+        return esFragil;
+    }
+
     public double getPeso() {
         return peso;
     }
@@ -19,14 +23,5 @@ public class Bulto {
         this.peso = peso;
         this.esFragil = esFragil;
     }
-
-    @Override
-    public String toString() {
-        return "Bulto{" +
-                "identificador = " + identificador +
-                ", volumen = " + volumen +
-                ", peso = " + peso +
-                ", fragil = " + esFragil +
-                '}' + "\n";
-    }
 }
+

@@ -3,19 +3,21 @@ public class Bulto {
     private String identificador;
     private double volumen;
     private double peso;
-    private boolean fragil;
+    private boolean esFragil;
+
+    public double getVolumen() {
+        return volumen;
+    }
 
     public double getPeso() {
         return peso;
     }
 
-
-
-    public Bulto(String identificador, double volumen, double peso, boolean fragil) { /*Añado el constructor para añadir las caracteristicas del bulto en el main.*/
+    public Bulto(String identificador, double volumen, double peso, boolean esFragil) { /*Añado el constructor para añadir las caracteristicas del bulto en el main.*/
         this.identificador = identificador;
         this.volumen = volumen;
         this.peso = peso;
-        this.fragil = fragil;
+        this.esFragil = esFragil;
     }
 
     @Override
@@ -24,7 +26,7 @@ public class Bulto {
                 "identificador = " + identificador +
                 ", volumen = " + volumen +
                 ", peso = " + peso +
-                ", fragil = " + fragil +
+                ", fragil = " + esFragil +
                 '}' + "\n";
     }
 }

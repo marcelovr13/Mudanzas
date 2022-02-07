@@ -2,14 +2,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Bulto bulto1 = new Bulto("1A", 50, 25, true );
-        System.out.println(bulto1);
+        Bulto sofa = new Bulto("sofa", 20, 50, false );
+        Bulto sillas = new Bulto("sillas", 10, 15, false );
+        Bulto jarron = new Bulto("jarron", 5, 10, true );
+        Bulto mesa = new Bulto("mesa", 25, 50, false );
 
-        Camion camion1 = new Camion("7864FJC", 200, 500);
-        System.out.println(camion1);
+        Camion camion = new Camion("1234ABC", 50, 100);
 
-        Mudanza mudanza1 = new Mudanza("23", 200, 5);
-        System.out.println(mudanza1);
+        camion.cargaBulto(sofa);
+        camion.cargaBulto(sillas);
+        camion.cargaBulto(jarron);
+        camion.cargaBulto(mesa);
+
+
 
 
 

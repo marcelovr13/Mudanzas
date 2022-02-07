@@ -20,11 +20,23 @@ public class Camion {
     }
 
     public boolean cabeBulto(Bulto bulto){
-        return bulto.getPeso() <= pesoDisponible();
+        return bulto.getPeso() <= pesoDisponible() && bulto.getVolumen() <= volumenDisponible();
     }
 
     public double pesoDisponible(){
         return pesoMaximo -  pesoCarga();
+    }
+
+    public double volumenDisponible(){
+        return volumenRemolque - volumenCarga();
+    }
+
+    public double volumenCarga(){
+        double volumenTotalCarga = 0;
+
+        for (Bulto bulto : bultosCargados)
+            volumenTotalCarga += bulto.getVolumen();
+            return volumenTotalCarga;
     }
 
     public double pesoCarga(){
